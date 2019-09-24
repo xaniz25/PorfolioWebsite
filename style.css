@@ -1,0 +1,329 @@
+* {
+   margin: 0;
+   padding: 0;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100%;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  overflow-x: hidden;
+}
+
+.container-fluid{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+header{
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  margin: 0;
+  background: white;
+  z-index: 1;
+}
+
+header ul{
+  margin: 10px;
+  float: right;
+  padding: 0;
+}
+
+header li{
+  margin: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: inline;
+  font-size: 24px;
+  color: black;
+}
+
+header a, a:hover{
+  color: black;
+}
+
+/*hide navigation bar for smaller screens*/
+@media (max-width: 486px) {
+  .nav {
+    display: none;}
+}
+
+/*show navigation menu button for smaller screens*/
+#navbtn {
+  position: absolute;
+  top: -80px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #bb9dc9;
+  border: solid 2px #bb9dc9;
+  border-radius: 10px;}
+
+/*change color of button on hover*/
+#navbtn:hover {
+  padding: 7px 12px;
+  background-color: #bb9dc9;
+  color: white;
+  border-style: none;}
+
+/*change text color of menu on hover*/
+#navbtn a:hover {
+  color: #bb9dc9;
+  text-decoration: none;}
+
+/*container for navigation menu*/
+#navdrop {
+  position: absolute;
+  top: 90px;
+  right: 0;}
+
+/*hide navigation menu list by default*/
+.nav2 {
+  display: none;}
+
+/*styling for each menu selection*/
+.nav2 li {
+  list-style: none;
+  display: block;
+  font-size: 24px;
+  margin: 0;
+  padding: 7px;
+  width: auto;
+  color: #bb9dc9;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px}
+
+.nav2 a{
+  color: #bb9dc9;
+}
+
+/*change color of menu background on hover*/
+.nav2 li:hover {
+  background: #bb9dc9;
+  color: white;}
+
+/*change color of menu link on hover*/
+.nav2 li a:hover {
+  color: white;}
+
+/*show menu list when hovering menu button*/
+#navdrop:hover .nav2 {
+  display: block;
+  position: relative;
+  margin-top: -25px;
+  margin-right: 0;
+  color: #bb9dc9;}
+
+/*hide button for bigger screens*/
+@media (min-width: 486px) {
+  #navbtn {
+    display: none;
+  }
+}
+
+#logo {
+  padding: 5px;
+  width: 70px;
+  height: 70px;
+}
+
+#home{
+  height: 100vh;
+  background-blend-mode: screen;
+  background-image: url("laptop.jpg");
+  background-color: #bb9dc9;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#welcome{
+  padding-top: 43vh;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+#welcome h1{
+  font-size: 100px;
+}
+
+@media screen and (max-width:478px){
+  #welcome{
+    padding-top: 36vh;
+  }
+  #welcome h1{
+    font-size: 80px;
+  }
+}
+
+#about{
+  width: 100vw;
+  height: 100%;
+  z-index: 2;
+}
+
+#about-contents{
+  height: 100%;
+  padding-top: 90px;
+  margin-top: -70px;
+}
+
+#paragraph{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+#me img{
+  width: auto;
+  height: 110vh;
+  margin: 20px;
+}
+
+@media screen and (max-width: 768px){
+    #about{
+      text-align: center;
+    }
+    #box-parent{
+      display:flex;
+      flex-flow: column;
+    }
+    #box1{
+      order:2;
+      margin: 0;
+    }
+    #box2{
+      order:1;
+      margin: 0;
+      padding: 0;
+    }
+    #me img {
+      margin: 3vw;
+      height: 70vh;
+      margin: 0;
+    }
+    h1{
+      text-align: center;
+    }
+}
+
+#projects {
+  padding-top: 14vh;
+  margin-top: -14vh;
+  margin: 25px;
+  height: 100vh;
+  clear: both;
+}
+
+#projectlist {
+  text-align: center;
+}
+
+.eachproject {
+  margin: 50px;
+  display: inline-block;
+  font-size: 3vw;
+}
+
+.eachproject img {
+  width: 30vw;
+  height: auto;
+}
+
+@media (max-width:681px) {
+    #projects {
+      height: 150vh;
+      padding-top: 150px;
+      margin-bottom: 100px;
+    }
+    #projectlist {
+      margin-left: -20px;
+    }
+    .eachproject {
+      font-size: 7vw;
+    }
+    .eachproject img {
+      width: 85vw;
+      height: auto;
+    }
+}
+
+#connect{
+  height: 100vh;
+  background-blend-mode: screen;
+  background-image: url("laptop.jpg");
+  background-color: #bb9dc9;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+#connect-contents{
+  padding-top: 44vh;
+  margin: -70px 20px 0 20px;
+  text-align: center;
+  color: rgba(10, 10 ,10 ,0.8);
+}
+
+#buttons{
+  text-align: center;
+}
+
+.fas, .fab{
+  padding: 10px;
+  margin: 10px 25px;
+  font-size: 50px;
+  color: rgba(10, 10 ,10 ,0.7);
+}
+
+.fas:hover, .fas:focus, .fab:hover, .fab:focus{
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(10, 10 ,10 ,0.5);
+  color: white;
+}
+
+@media screen and (max-width:768px){
+  #connect{
+    padding-top: 8vh;
+  }
+  .fas, .fab{
+    font-size: 7vh;
+    margin: 25px 5px;
+  }
+}
+
+footer{
+  margin: 0;
+  height: auto;
+}
+
+#copy{
+  float: right;
+  clear: both;
+  margin-top: -10px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.signature{
+  width: 60px; height: 20px;
+}
