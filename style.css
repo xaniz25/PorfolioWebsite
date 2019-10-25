@@ -179,16 +179,17 @@ header a, a:hover{
   height: 100%;
   padding-top: 90px;
   margin-top: -70px;
+  font-size: 20px;
 }
 
 #paragraph{
-  font-size: 20px;
   margin-left: 10px;
 }
 
 .row {
   margin: 0;
   padding: 0;
+  font-size: 20px; !important;
 }
 
 #me img{
