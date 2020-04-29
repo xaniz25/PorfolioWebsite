@@ -4,22 +4,29 @@
     <title>Shanice Talan</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <meta property="og:title" content="Shanice Talan - Software Developer" />
+    <meta property="og:title" content="Shanice Talan - Web Developer" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Entry-level software developer with 4 years of educational programming experience, and experience in Web Development, Database Design, Desktop & Mobile Applications">
+    <meta property="og:description" content="Experienced in Web Development, Database Design, Desktop & Mobile Applications">
     <meta property="og:url" content="http://shanicetalan.com" />
-    <meta property="og:image" content="http://shanicetalan.com/me.jpg" />
+    <meta property="og:image" content="http://shanicetalan.com/images/me.jpg" />
   </head>
   <body>
     <div class="container-fluid">
       <!--Navigation-->
       <header>
-        <a href="#home"><img id="logo" src=logo.png></a>
+        <a href="#home"><img id="logo" src=/images/logo.png></a>
         <ul class="nav">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -41,7 +48,7 @@
       <div id="home">
         <div id="welcome" class="animated fadeIn slower">
           <h1>Shanice Talan</h1>
-          Software Developer
+          Web Developer
         </div>
       </div>
       <!--About-->
@@ -51,17 +58,10 @@
           <div class="col-lg-7 animated fadeIn delay-3s slower" id="box1">
             <div id ="paragraph">
               <h1>About Me</h1>
-              <p>Hi there!<br>
-                My name is Shanice, and I am currently an Object Oriented Software Development student at SAIT.<br>
-                I will be finishing the program on October 2019.</p>
-              <p>My first experience with programming was during my undergrad in Electrical Engineering at The University of Calgary. The very first language I learned was C++.
-                During my time in university, I also further practiced my programming skills with C, MIPS Assembly, VHDL.
-                I also joined the university's Solar Car team where I get to play a little bit with the Arduino.
-                For the last year of our undergrad, I was able to make our Capstone team succeed as Project Manager.
-                We successfully built a wearable device that senses the user's muscle electric activity and increase their grip strength.</p>
-              <p>Now, as someone who has a natural aptitude for solving problems, and as someone who likes to constantly learn new things,
-                I have shifted my interest to Software Development. I am finding everything that I am learning at SAIT fun and engaging.
-                I have done multiple projects using the new skills I have learned, and have maintained excellent academic standing with a GPA of 4.0.
+              <p>Hi there! My name is Shanice, and I am a Junior Full Stack Developer.</p>
+              <p>My very first experience with coding was when I was 13, when Friendster became popular in the Philippines. It's like Facebook but users can customize the look of their pages using HTML and CSS. I found that really fun so I decided to take it more seriously by taking a computers course as an elective during my high school there. During my final year in 2008, I got accepted to one of Philippine's top universities, University of Santo Tomas, for Information Technology. But I wasn't able to enroll as my family was moving to Canada.</p>
+                <p>When we moved to Canada, I developed an interest in the environment and renewable energy, so I decided to pursue an Electrical Engineering degree. That's where I learned my very first programming language, C++. During my time in university, I also further practiced my programming skills with C, C#, MIPS Assembly, VHDL. I also joined the university's Solar Car team where I get to play a little bit with the Arduino. For the last year of our undergrad, I was able to make our Capstone team succeed as Project Manager. We successfully built a wearable device that senses the user's muscle electric activity and increase their grip strength, also with an Arduino.</p>
+              <p>Now, I have shifted my interest back to IT, specifically Software/Web Development. I am finding everything that I am doing fun and engaging, and I am learning new things each day!
               </p>
             </div>
             <div class = "row">
@@ -102,6 +102,7 @@
                           ► Android Studio<br>
                           ► XML<br>
                           ► JSON<br>
+                          <br>
                       </div>
                     </div>
                   </div>
@@ -118,7 +119,7 @@
                   </div>
               </div>
               <div class="col-lg-5" id="box2">
-                <div id="me" class="animated fadeInUp delay-3s slower"><img src="me.jpg"/></div>
+                <div id="me" class="animated fadeInUp delay-3s slower"><img src="/images/me.jpg"/></div>
               </div>
         </div>
       </div>
@@ -127,14 +128,21 @@
       <div id="projects">
         <h2>Projects</h2>
         </br>
-        <div id="projectlist">
-          <div class="eachproject">
-            <a href="/wedding"><img src="wedding.JPG" alt="Wedding Invitation"/>
+        <div class='row'>
+          <div class="col-lg-4">
+            <a href="/wedding">
+            <img src="/images/weddingpage.png" alt="Wedding Invitation" style='max-width: 100%; height: auto'/>
             <h6>Wedding Invitation</h6></a>
           </div>
-          <div class="eachproject">
-            <a href="/travel"><img src="travel.JPG" alt="Travel Website"/>
-            <h6>Travel Website</h6></a>
+          <div class="col-lg-4">
+            <a href="/travel">
+            <img src="/images/TravelExpertsPHP.png" alt="Travel Website (PHP)" style='max-width: 100%; height: auto'/>
+            <h6>Travel Website (PHP)</h6></a>
+          </div>
+          <div class="col-lg-4">
+            <a href="https://www.youtube.com/watch?v=sjz9Uc5nRtQ">
+            <img src="/images/TravelExpertsJSP.png" alt="Travel Website (JSP)" style='max-width: 100%; height: auto'/>
+            <h6>Travel Website (JSP)</h6></a>
           </div>
         </div>
       </div>
@@ -158,9 +166,19 @@
         <iframe src="https://snapwidget.com/embed/706813" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
         <div id="copy">
           &copy; Shanice Talan 2019
-          <img class="signature" src=Signature.png />
+          <img class="signature" src=/images/Signature.png />
         </div>
       </footer>
     </div>
+<!-- Default Statcounter code for Shanicetalan.com http://shanicetalan.com -->
+<script type="text/javascript">
+var sc_project=11932127; 
+var sc_invisible=1; 
+var sc_security="02344911"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<!-- End of Statcounter Code -->
   </body>
 </html>

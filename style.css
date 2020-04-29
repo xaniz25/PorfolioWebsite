@@ -141,7 +141,7 @@ header a, a:hover{
 #home{
   height: 100vh;
   background-blend-mode: screen;
-  background-image: url("laptop.jpg");
+  background-image: url("/images/laptop.jpg");
   background-color: #bb9dc9;
   background-size: cover;
   background-attachment: fixed;
