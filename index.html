@@ -11,6 +11,8 @@
     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="js.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap"/>
@@ -21,12 +23,13 @@
     <meta property="og:description" content="Experienced in Web Development, Database Design, Desktop & Mobile Applications">
     <meta property="og:url" content="http://shanicetalan.com" />
     <meta property="og:image" content="http://shanicetalan.com/images/me.jpg" />
+    <meta name="description" content="Experienced in Web Development, Database Design, Desktop & Mobile Applications">
   </head>
   <body>
     <div class="container-fluid">
       <!--Navigation-->
       <header>
-        <a href="#home"><img id="logo" src=/images/logo.png></a>
+        <a href="#home"><img id="logo" src='images/logo.png'></a>
         <ul class="nav">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -46,7 +49,7 @@
       </header>
       <!--Welcome Page-->
       <div id="home">
-        <div id="welcome" class="animated fadeIn slower">
+        <div id="welcome">
           <h1>Shanice Talan</h1>
           Web Developer
         </div>
@@ -55,10 +58,10 @@
       <div id="about">
         <div id="about-contents">
         <div class="row" id="box-parent">
-          <div class="col-lg-7 animated fadeIn delay-3s slower" id="box1">
+          <div class="col-lg-7" id="box1">
             <div id ="paragraph">
               <h1>About Me</h1>
-              <p>Hi there! My name is Shanice, and I am a Junior Full Stack Developer.</p>
+              <p>Hi there! My name is Shanice, and I am a Full Stack Web Developer.</p>
               <p>My very first experience with coding was when I was 13, when Friendster became popular in the Philippines. It's like Facebook but users can customize the look of their pages using HTML and CSS. I found that really fun so I decided to take it more seriously by taking a computers course as an elective during my high school there. During my final year in 2008, I got accepted to one of Philippine's top universities, University of Santo Tomas, for Information Technology. But I wasn't able to enroll as my family was moving to Canada.</p>
                 <p>When we moved to Canada, I developed an interest in the environment and renewable energy, so I decided to pursue an Electrical Engineering degree. That's where I learned my very first programming language, C++. During my time in university, I also further practiced my programming skills with C, C#, MIPS Assembly, VHDL. I also joined the university's Solar Car team where I get to play a little bit with the Arduino. For the last year of our undergrad, I was able to make our Capstone team succeed as Project Manager. We successfully built a wearable device that senses the user's muscle electric activity and increase their grip strength, also with an Arduino.</p>
               <p>Now, I have shifted my interest back to IT, specifically Software/Web Development. I am finding everything that I am doing fun and engaging, and I am learning new things each day!
@@ -71,25 +74,22 @@
                   <div class="col-lg-4">
                       	  ► HTML<br>
                           ► CSS<br>
-                          ► Beautiful UI<br>
-                          ► Responsive Web Design<br>
+                          ► Bootstrap<br>
                           ► JavaScript<br>
+                          ► AJAX<br>
                           ► jQuery<br>
                           ► PHP<br>
-                          ► Java<br>
                           ► Eclipse<br>
                     </div>
                     <div class="col-lg-4">
+                          ► Java<br>
                           ► JSP<br>
                           ► REST<br>
-                          ► AJAX<br>
                           ► Visual Studio<br>
                           ► C#<br>
                           ► .NET<br>
-                          ► Windows Forms<br>
-                          ► Web Forms<br>
+                          ► WinForms<br>
                           ► MVC<br>
-                          ► Entity Framework<br>
                       </div>
                       <div class="col-lg-4">
                           ► MS SQL<br>
@@ -100,8 +100,6 @@
                           ► IntelliJ IDEA<br>
                           ► JavaFX<br>
                           ► Android Studio<br>
-                          ► XML<br>
-                          ► JSON<br>
                           <br>
                       </div>
                     </div>
@@ -119,7 +117,7 @@
                   </div>
               </div>
               <div class="col-lg-5" id="box2">
-                <div id="me" class="animated fadeInUp delay-3s slower"><img src="/images/me.jpg"/></div>
+                <div id="me"><img src="images/me.jpg"/></div>
               </div>
         </div>
       </div>
@@ -129,19 +127,19 @@
         <h2>Projects</h2>
         </br>
         <div class='row'>
-          <div class="col-lg-4">
+          <div class="col-lg-4 project">
             <a href="/wedding">
-            <img src="/images/weddingpage.png" alt="Wedding Invitation" style='max-width: 100%; height: auto'/>
+            <img src="images/weddingpage.png" alt="Wedding Invitation" style='max-width: 100%; height: auto'/>
             <h6>Wedding Invitation</h6></a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 project">
             <a href="/travel">
-            <img src="/images/TravelExpertsPHP.png" alt="Travel Website (PHP)" style='max-width: 100%; height: auto'/>
+            <img src="images/TravelExpertsPHP.png" alt="Travel Website (PHP)" style='max-width: 100%; height: auto'/>
             <h6>Travel Website (PHP)</h6></a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 project">
             <a href="https://www.youtube.com/watch?v=sjz9Uc5nRtQ">
-            <img src="/images/TravelExpertsJSP.png" alt="Travel Website (JSP)" style='max-width: 100%; height: auto'/>
+            <img src="images/TravelExpertsJSP.png" alt="Travel Website (JSP)" style='max-width: 100%; height: auto'/>
             <h6>Travel Website (JSP)</h6></a>
           </div>
         </div>
@@ -151,10 +149,11 @@
         <div id="connect-contents">
           <h1>Connect with me</h1>
           <div id="buttons">
-            <a href="mailto:shanice@shanicetalan.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/shanicetalan" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/xaniz25" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://youtube.com/user/xaniz25" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:shanicetalan@gmail.com"><i class="fas fa-envelope" title="shanicetalan@gmail.com"></i></a>
+            <a href="https://linkedin.com/in/shanicetalan" target="_blank"><i class="fab fa-linkedin" title="https://linkedin.com/in/shanicetalan"></i></a>
+            <a href="https://github.com/xaniz25" target="_blank"><i class="fab fa-github" title="https://github.com/xaniz25"></i></a>
+            <a href="https://youtube.com/user/xaniz25" target="_blank"><i class="fab fa-youtube" title="https://youtube.com/user/xaniz25"></i></a>
+            <a href="ShaniceTalan.docx" target="_blank" download><i class="fas fa-file-download" title='Download Resume'></i></a>
           </div>
         </div>
       </div>
@@ -162,11 +161,10 @@
       <!-- Footer -->
       <footer>
       <!-- SnapWidget -->
-        <script src="https://snapwidget.com/js/snapwidget.js"></script>
-        <iframe src="https://snapwidget.com/embed/706813" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+          <script src="https://snapwidget.com/js/snapwidget.js"></script>
+          <iframe src="https://snapwidget.com/embed/706813" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
         <div id="copy">
-          &copy; Shanice Talan 2019
-          <img class="signature" src=/images/Signature.png />
+          &copy; Shanice Talan 2020
         </div>
       </footer>
     </div>
