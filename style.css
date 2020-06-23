@@ -229,12 +229,12 @@ header a, a:hover{
   padding-top: 14vh;
   margin-top: -14vh;
   margin: 25px;
-  height: 100vh;
+  height: 130vh;
   clear: both;
 }
 
-#projectlist {
-  text-align: center;
+.projectrow {
+  margin-top: 50px;
 }
 
 .eachproject {
