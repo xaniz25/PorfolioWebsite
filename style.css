@@ -194,11 +194,11 @@ header a, a:hover{
 
 #me img{
   width: auto;
-  height: 110vh;
+  height: 90vh;
   margin: 20px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1025px){
     #about{
       text-align: center;
     }
@@ -229,40 +229,32 @@ header a, a:hover{
   padding-top: 14vh;
   margin-top: -14vh;
   margin: 25px;
-  height: 130vh;
+  height: 94vw;
   clear: both;
 }
 
-.projectrow {
-  margin-top: 50px;
-}
-
-.eachproject {
-  margin: 50px;
-  display: inline-block;
-  font-size: 3vw;
-}
-
-.eachproject img {
-  width: 30vw;
-  height: auto;
-}
-
-@media (max-width:681px) {
+@media (max-width:1025px) {
     #projects {
-      height: 150vh;
-      padding-top: 150px;
-      margin-bottom: 100px;
+      height: 108vw;
     }
-    #projectlist {
-      margin-left: -20px;
+}
+
+@media (max-width:801px) {
+    #projects {
+      height: 146vw;
     }
-    .eachproject {
-      font-size: 7vw;
+}
+
+@media (max-width:601px) {
+    #projects {
+      height: 170vw;
     }
-    .eachproject img {
-      width: 85vw;
-      height: auto;
+}
+
+
+@media (max-width:577px) {
+    #projects {
+      height: 520vw;
     }
 }
 

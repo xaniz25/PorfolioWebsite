@@ -19,7 +19,7 @@ $(window).scroll(function () {
     }
     
     if ($(window).scrollTop() >= projectsTriggerHeight) {
-        $('.project').addClass('animated fadeInUp slower');
+        $('#projects').addClass('animated fadeInUp slower');
     }
     
     if ($(window).scrollTop() >= connectTriggerHeight) {
